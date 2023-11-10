@@ -73,7 +73,7 @@
 	\setlength{\fboxsep}{0cm}%already boxed
 	\colorbox{subsubsection}{%
 		\begin{minipage}{\linewidth}%
-			\vspace*{2pt}%Space before
+			\vspace*{1pt}%Space before
 			\leftskip2pt %Space left
 			\rightskip\leftskip %Space right
 			{\color{titletext} #1}
@@ -90,8 +90,8 @@
 %--------------------------------------------------------------------------------------
 
 %Informationen für den Befehl maketitle
-\title{Formelsammlung}
-\subtitle{Sammlung gegliedert nach Fach}
+\title{Analysis}
+\subtitle{Sammlung gegliedert nach Modul}
 \author{Fabian Suter, \today}
 \date{{\small \url{https://github.com/FabianSuter/Analysis.git}}}
  
@@ -100,10 +100,10 @@
 	\begin{multicols*}{3}
 		\maketitle
 
-		\input{Sections/Analysis_1a.tex} %bis 2.12 kontrolliert
+		\input{Sections/Analysis_1a.tex}
+			%Sektion aufgeräumt und strukturell eingeschoben
 			%Umwandlung sinsin - coscos fehlt
-			%nach allg. Kontrolle OneNote noch durchschauen für Formeln von Zgraggen
-
+			%OneNote noch durchschauen für Formeln von Zgraggen
 			%Laut Zgraggen nur 4 Seiten erlaubt, evtl. erst nach Prüfung ausschmücken
 
 		\input{Sections/Analysis_1b.tex} %noch nicht kontrolliert
