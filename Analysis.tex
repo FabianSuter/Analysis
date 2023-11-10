@@ -4,6 +4,8 @@
 
 \usepackage{hyperref}
 
+%---------------------------------------------------------------------------------------
+
 %Layout
 \usepackage{multicol, geometry, xcolor}
 \geometry{margin=1cm}
@@ -19,15 +21,6 @@
 \usepackage{tikz}
 \usepackage{scalerel} %maybe not needed
 
-%Paragraphen mit Zeilenumbruch generieren, https://latex.org/forum/viewtopic.php?t=1383
-\makeatletter
-\renewcommand\paragraph{%
-   \@startsection{paragraph}{4}{0mm}%
-      {-\baselineskip}%
-      {.5\baselineskip}%
-      {\normalfont\normalsize\bfseries}}
-\makeatother
-
 %Mathematik-Pakete
 \usepackage{amsmath, amstext, amssymb, mathtools, esint, polynom}
 \usepackage{bm}
@@ -35,12 +28,13 @@
 
 \usepackage{romannum}
 
+%----------------------------------------------------------------------------------
+
 % Farbe der Boxen für Titel / Untertitel
 \definecolor{section}{RGB}{79,148,205}
 \definecolor{subsection}{RGB}{135,206,250}
 \definecolor{subsubsection}{RGB}{133, 250, 207}
 \definecolor{titletext}{RGB}{0,0,0}
-
 
 % section color box
 \setkomafont{section}{\mysection}
@@ -56,6 +50,7 @@
 			\vspace*{1pt}%Space after
 		\end{minipage}%
 }}
+
 % subsection color box
 \setkomafont{subsection}{\mysubsection}
 \newcommand{\mysubsection}[1]{%
@@ -86,18 +81,19 @@
 		\end{minipage}%
 }}
 
-
+%--------------------------------------------------------------------------------------
 				
 \providecommand{\diff}{\mathop{} \! \mathrm{d}}
 
 \newcommand{\e}{\mathrm{e}}
 
+%--------------------------------------------------------------------------------------
 
 %Informationen für den Befehl maketitle
 \title{Formelsammlung}
 \subtitle{Sammlung gegliedert nach Fach}
 \author{Fabian Suter, \today}
-\date{{\small \url{https://github.com/FabianSuter/Formelsammlung.git}}}
+\date{{\small \url{https://github.com/FabianSuter/Analysis.git}}}
  
 \begin{document}
 
@@ -107,6 +103,11 @@
 		\input{Sections/Analysis_1a.tex} %bis 2.12 kontrolliert
 			%Umwandlung sinsin - coscos fehlt
 			%nach allg. Kontrolle OneNote noch durchschauen für Formeln von Zgraggen
+
+			%Laut Zgraggen nur 4 Seiten erlaubt, evtl. erst nach Prüfung ausschmücken
+
+		\input{Sections/Analysis_1b.tex} %noch nicht kontrolliert
+
 	
 	\end{multicols*}	
 \end{document}
