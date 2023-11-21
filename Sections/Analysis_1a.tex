@@ -204,9 +204,10 @@
 			
 			\includegraphics[width=0.7\linewidth]{Bilder/hornerschema_allg}
 					
-			\textbf{Beispiel:}\\
-				\includegraphics[height=2cm]{Bilder/hornerschema_bsp} \\
-				\\
+			\textbf{Beispiel:}
+			
+			\includegraphics[height=2cm]{Bilder/hornerschema_bsp}
+
 				$f(x) = x^3-67x-126$\\
 				$\Rightarrow f(x) = (x-x_1)(b_2x^2 + b_1x + b_0) = (x+2)(x^2-2x-63)$ 
 			
@@ -218,7 +219,7 @@
 			
 		\subsubsection{Partialbruchzerlegung}
 			\begin{tabular}{ll}
-				(1) & echt gebrochen ($m < n$) \\
+				(1) & echt gebrochen (Zähler < Nenner) \\
 				    & Ja: $\rightarrow$ (2) \\
 					& Nein: $\rightarrow$ Polynomdivision \\
 				(2) & Nenner faktorisieren \\
@@ -244,7 +245,7 @@
 					(3.3) & $x = a \Rightarrow B(2a) = 1 \Rightarrow B = \frac{1}{2a} $ \\			
 					& $x = -a \Rightarrow A(2a) = 1 \Rightarrow A = \frac{1}{2a} $ \\
 				\end{tabular}
-		
+			\\
 			\textbf{Spezielle Ansätze PBZ} \\
 				\begin{tabular}{ll}
 					$f(x)$ & $=\frac{5x^2-37x+54}{x^3-6x^2+9x} =  \frac{A}{x}+\frac{B}{x-3}+\frac{C}{(x-3)^2}$ \\ 
@@ -273,6 +274,22 @@
 			\paragraph{Umwandlung}
 				\begin{tabular}{ll}
 					$\sin(x + \frac{\pi}{2}) = \cos(x)$ & $\cos(x - \frac{\pi}{2}) = \sin(x)$ \\	
+				\end{tabular}
+
+			\paragraph{Pythagoras}
+				\begin{tabular}{ll}
+					$\sin^2(x) + \cos^2(x) =$ & $ 1 $ \\
+				\end{tabular}
+
+			\paragraph{2 Winkel}
+				\begin{tabular}{ll}
+					$\cos(\alpha \pm \beta)$ & $= \cos\alpha\cos\beta \mp \sin\alpha\sin\beta$ \\
+					$\sin(\alpha \pm \beta)$ & $= \sin\alpha\cos\beta \pm \sin\beta\cos\alpha$ \\
+				\end{tabular}
+
+			\paragraph{Summenformel}
+				\begin{tabular}{ll}
+					$\sin\alpha + \sin\beta$ & $= 2 \cdot \cos(\frac{\alpha - \beta}{2}) \cdot \sin(\frac{\alpha + \beta}{2})$ \\
 				\end{tabular}
 			
 			\paragraph{Symmetrien} 
@@ -356,8 +373,7 @@
 				\\
 				"Naiv": $\frac{-\infty + \infty + 5}{\infty - \infty + 7} \rightarrow \frac{-\infty + \infty}{\infty - \infty} \rightarrow \frac{?}{?}$ \\
 				\\
-				Algebra, Erweitern mit $\frac{1}{n^2}$: $f(n) = \frac{-2+\frac{4}{n}-\frac{5}{n^2}}{8-\frac{3}{n}+\frac{7}{n^2}} (n \rightarrow \infty) = \frac{-2}{8} = -\frac{1}{4}$ \\
-				
+				Algebra, Erweitern mit $\frac{1}{n^2}$: $f(n) = \frac{-2+\frac{4}{n}-\frac{5}{n^2}}{8-\frac{3}{n}+\frac{7}{n^2}} (n \rightarrow \infty) = \frac{-2}{8} = -\frac{1}{4}$ \\				
 		
 		\subsubsection{Rechnen mit Unendlich}
 			\textbf{Bestimmte Formen} \\
@@ -446,6 +462,17 @@
 					\end{tabular}
 			\end{minipage}
 
+		\subsubsection{log-Rechenregeln}
+			\begin{tabular}{|ll|ll|}
+				\hline
+				$ln(a \cdot b)$ & $= ln(a) + ln(b)$         & $ln(\frac{a}{b})$ & $= ln(a) - ln(b)$ \\
+				\hline
+				$e^{ln(a \cdot b)}$ & $= e^{ln(a) + ln(b)}$ & $ln(x^r)$         & $= r \cdot ln(x)$ \\
+				\hline
+				$a \cdot b$ & $= e^{ln(a)} \cdot e^{ln(b)}$ &                   &                   \\
+				\hline
+			\end{tabular}
+
 		\subsubsection{Hyperbolische Funktionen}
 			$\e^x = \frac{1}{2} (\e^x - \e^{-x}) + \frac{1}{2} (\e^x + \e^{-x}) = \sinh(x) + \cosh(x)$ \\
 			\\
@@ -457,10 +484,10 @@
 			\end{tabular}
 			
 			\textbf{Area-Funktionen (Umkehrung Hyperbolische. F.)} \\
-				\begin{tabular}{ll}
-					$\mathrm{arsinh}(x): $ &  $\mathbb{R} \rightarrow \mathbb{R}$ \\
-					$\mathrm{arcosh}(x): $ & $[1; \infty) \rightarrow \mathbb{R}^+_0$  \\
-					$\mathrm{artanh}(x): $ & $ \vert x \vert < 1 \rightarrow \mathbb{R} $ \\			
+				\begin{tabular}{lll}
+					$\mathrm{arsinh}(x): $ & $ln(x + \sqrt{x^2+1})$         & $\mathbb{R} \rightarrow \mathbb{R}$ \\
+					$\mathrm{arcosh}(x): $ & $ln(x + \sqrt{x^2-1})$         & $[1; \infty) \rightarrow \mathbb{R}^+_0$  \\
+					$\mathrm{artanh}(x): $ & $\frac{1}{2}ln\frac{1+x}{1-x}$ & $ \vert x \vert < 1 \rightarrow \mathbb{R} $ \\			
 				\end{tabular}
 			
 		\subsubsection{Logarithmusfunktion}
@@ -485,8 +512,8 @@
 				Arithmetik: & $+, -, *, :, \sqrt{...}, \vert ...\vert$ \\
 				Erweiterung:& erweitern mit $\frac{1}{x^n}$ n = h"ochste (Nenner-)Potenz \\
 				Erweiterung: & erweitern mit Gegentherm (3. Binom bilden)\\
-				Faktorisierung: & Z"ahler und Nenner faktoriesieren und kürzen \\
-				\textbf{Trigo:} & \textbf{Bronstein S. 57 1. C beachten}
+				Faktorisierung: & Z"ahler und Nenner faktorisieren und kürzen \\
+				%hier war mal Trigo: Bronstein S. 57 1.C, wurde jedoch nicht gefunden
 			\end{tabular}
 			
 		\subsubsection{Links- / Rechtsseitiger Grenzwert}
@@ -529,7 +556,7 @@
 			Eine Funktion ist stetig, wenn der Funktionsgraph kann gezeichnet werden, ohne dass der Stift abgesetzt werden muss. \\
 			\includegraphics[width=0.9\linewidth]{Bilder/stetigkeit} \\
 
-		\subsubsection{"Ubertragungsprinzip (Folgenprinzip)}
+		\subsubsection{Übertragungsprinzip (Folgenprinzip)}
 			$f$ besitzt an der Stelle $x_0$ Grenzwert $g$, wenn für jede gegen $x_0$\\
 			konvergente Folge $< x_n >$ gilt: $\lim\limits_{x \to \infty} f(x_n) = g$ 
 			
@@ -543,7 +570,7 @@
 					& Grenzwert $g^+$ gegen $\infty$ bestimmen \\
 				\end{tabular}
 			
-		\subsubsection{Nullstellen bestimmen gem"ass Bolzano}
+		\subsubsection{Nullstellen bestimmen gemäss Bolzano (Bisektion)}
 			$f(x)$ auf Intervall $[a;b]$ stetig, $f(a)$ und $f(b)$ haben versch. Vorzeichen \\
 			$\rightarrow$ Es existiert (mindestens) eine 	Nullstelle $\xi$\\	
 			NS mittels Bisektion (Intervallschachtelung) näherungsweise berechnen: \\
@@ -598,8 +625,6 @@
 				Konv./Div. & Konvergenz & Konvergenz & Divergenz \\
 				\hline
 			\end{tabular}
-			
-		\columnbreak
 			
 		\subsubsection{Grenzwerte von rekursiven Folgen}
 			Anwendung des Bolzano-Prinzips!  Beispiel: $a_1 = \frac{1}{4}$ ; $a_{n+1} = a_n^2 + \frac{1}{4}$ \\
