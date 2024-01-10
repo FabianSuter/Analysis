@@ -1,11 +1,12 @@
-\section{Differentialrechnung S. 444 ff}
+\section{Analysis 1b}
+	\subsection{Differentialrechnung S. 444 ff}
 
 				\begin{tabular}{llll} 
 				Kurvenuntersuchungen & S. 261 & Taylor-reihe & S. 455 \\
 				\end{tabular}
 				
 				
-			\subsection{Begriff der Ableitung / Differenzialquotient S. 444}
+			\subsubsection{Begriff der Ableitung / Differenzialquotient S. 444}
 			Die Ableitung $f'(x)$ der Funktion $f(x)$ im Punkt $x_0$ entspricht der Steigung der Tangente an	$f(x)$ im Punkt $x_0$		 \\
 			\\
 			\begin{tabular}{ll}
@@ -15,7 +16,7 @@
 			\end{tabular}
 			
 
-			\subsection{Tangente / Normale / Zwischenwinkel}
+			\subsubsection{Tangente / Normale / Zwischenwinkel}
 			\begin{tabular}{ll}
 			Tangente: & $y = f'(x_0) \cdot (x - x_0) + y_0$ \\
 			\\
@@ -28,7 +29,7 @@
 			\end{tabular}
 			
 			
-			\subsection{Einseitige Ableitungen S. 445}
+			\subsubsection{Einseitige Ableitungen S. 445}
 			rechtsseitig: $f'_r(x_0) = \lim\limits_{x \to x_0^+}f'(x)$ \quad
 			linksseitig: $f'_l(x_0) = \lim\limits_{x \to x_0^-}f'(x)$ \\
 			\\
@@ -42,7 +43,7 @@
 		\includegraphics[width=0.9\linewidth]{Bilder/konvergenz-divergenz}
 			
 			
-			\subsection{Generische Muster}
+			\subsubsection{Generische Muster}
 			\begin{tabular}{ll}
 			Allg. Potenz &  $\left( f(x)^\alpha \right)' = f'(x) \cdot \alpha \cdot f(x) ^{\alpha - 1} $ \\
 			\\
@@ -52,9 +53,9 @@
 			\end{tabular}
 			
 			
-			\subsection{Ableitungsregeln S. 445-448}
+			\subsubsection{Ableitungsregeln S. 445-448}
 			
-			\subsubsection{Elementare Regeln}
+			\textbf{Elementare Regeln}\\
 			\begin{tabular}{lll}
 			Potenzen: & $f(x) = x^3$ & $f'(x) = 3 \, x^2$ \\
 			& $f(x) = x^\alpha$ & $f'(x) = \alpha \cdot x^{\alpha - 1}$ \\
@@ -67,38 +68,38 @@
 			\end{tabular}
 			
 			
-			\subsubsection{Produktregel}
+			\textbf{Produktregel}\\
 			$(f(x) \cdot g(x))' = f'(x) \cdot g(x) + f(x) \cdot g'(x)$ 
 			
-			\subsubsection{Quotientenregel}
+			\textbf{Quotientenregel}\\
 			$\left( \frac{u(x)}{v(x)} \right) ' = \frac{u'(x) \cdot v(x) - u(x) \cdot v'(x)}{v(x) ^2}$ \quad $\rightarrow$ als Produkt schreiben \\
 			\\
 			$u(x) \cdot \left( \frac{1)}{v(x)} \right) ' =  u'(x) \cdot \frac{1}{v(x)} + u(x) \cdot \frac{- v'(x)}{v(x)^2}$
 			
-			\subsubsection{Kettenregel}
+			\textbf{Kettenregel}\\
 			$g(f(x))' =  f'(x) \cdot g'(x)$ \\
 			
-			\subsubsection{Umkehrfunktion}
+			\textbf{Umkehrfunktion}\\
 			$(f^{-1}(y_0))' = \frac{1}{f'(x_0)} =  \frac{1}{f'(f^{-1}(y_0))}$ \\
 			
 
 			
-			\subsection{Allgemeine Logarithmus-Ableitung}
+			\subsubsection{Allgemeine Logarithmus-Ableitung}
 			$(\log_b(x))' = \left( \frac{\ln(x)}{\ln(b)} \right)' = \frac{1}{\ln(b)} \cdot (\ln(x))' = \frac{1}{\ln(b)} \cdot \frac{1}{x} $
 			
 			
-			\subsection{Lineare Approximation / Differenzial dy S. 459}
+			\subsubsection{Lineare Approximation / Differenzial dy S. 459}
 			Differenzial = dy = df = "Höhenunterschied der Tangente" \\
 			= "Linearzuwachs" \\
 			\textcolor{blue}{Differenzial = $f'(x_0) \cdot dx$} $= f'(x_0) \cdot h = f'(x_0) \cdot \Delta x = f'(x_0) \cdot (x- x_0) $ \\
 			\includegraphics[width=0.8\linewidth]{Bilder/differenzial}  \\
 			$\Delta y \approx dy \rightarrow$ Approximation / Fehler \\
 			Fehler : \quad $\Delta y - dy \rightarrow 0$ \quad $h \rightarrow 0$ \\	
-			\\
+			Tangentengleichung: $\hat f(x): y_0 + f'(x_0) \cdot (x - x_0)$ \\
 			\textbf{Die Tangente ist die beste lineare Approximation!}		
 			
 			
-			\subsection{Approximationsfehler}
+			\subsubsection{Approximationsfehler}
 			Die Fehler beziehen sich auf den Arbeitspunkt (z.B. $x_0$) \\
 			\\
 			\begin{tabular}{lll}
@@ -108,7 +109,7 @@
 			\end{tabular}
 			
 			
-			\subsection{Fehlerfortpflanzung} 
+			\subsubsection{Fehlerfortpflanzung} 
 			\begin{tabular}{llll}
 			Absolut: & $\Delta x \rightarrow \Delta y$ & &
 			$\Delta y \approx dy = f'(x_0) \cdot dx$ \\
@@ -130,12 +131,12 @@
 			$\rightarrow$ Tabelle ist bidirektional (Umkehrfunktionen)
 			
 			
-			\subsection{Wichtige Ableitungen S.446}
+			\subsubsection{Wichtige Ableitungen S.446}
 			
 			\includegraphics[width=\linewidth]{Bilder/ableitungen}
 
 			
-			\subsection{Taylor-Reihe (Approximation höherer Ordnung)}
+			\subsubsection{Taylor-Reihe (Approximation höherer Ordnung)}
 			n = Ordnung der Approximationsfunktion $p_n(x)$ \\
 			$h = x - x_0$ \\
 			\\
@@ -146,7 +147,7 @@
 			Der Approximationsfehler $R_n (x_0, h)$ entspricht $f(x) - p_n(x)$ und wird im nächsten Abschnitt beschrieben.		
 			
 			
-			\subsection{Fehler $R_n$ der Taylor-Reihe}
+			\subsubsection{Fehler $R_n$ der Taylor-Reihe}
 			Der Fehler ist nicht klar berechenbar, sondern nur auf einem Intervall "bestimmbar" $\rightarrow$ Worst Case! \\			
 			Voraussetzung: f auf Intervall [a;b] mind. (n+1) mal ableitbar\\
 			\\
@@ -162,7 +163,7 @@
 		\includegraphics[width=0.7\linewidth]{Bilder/zahlenstrahl}
 			
 			
-			\subsubsection{Verhalten von $R_n$}	
+			\textbf{Verhalten von $R_n$}	\\
 			
 			\begin{tabular}{llll}
 			1) & $n \rightarrow \infty$ & "Normal" \quad $R_n \rightarrow 0$ & $\vert h \vert$ fix  \\
@@ -171,7 +172,7 @@
 			\end{tabular}
 			
 			
-			\subsection{Satz von Rolle S. 454}
+			\subsubsection{Satz von Rolle S. 454}
 			\begin{tabular}{ll}
 			Voraussetzungen: & f auf Intervall [a;b] mind. (n+1) mal ableitbar\\
 			 & $f(a) = f(b)$ \\
@@ -185,7 +186,7 @@
 			
 			
 			
-			\subsection{Mittelwertsatz S. 454}			
+			\subsubsection{Mittelwertsatz S. 454}			
 			\begin{tabular}{ll}
 			Voraussetzungen: &  f auf Intervall [a;b] mind. (n+1) mal ableitbar \\
 			\end{tabular}
@@ -207,16 +208,16 @@
 			\end{minipage}			
 		
 			
-			\subsection{Extremalstellen S. 455-457}
+			\subsubsection{Extremalstellen S. 455-457}
 			f: [a;b] $\rightarrow$ $\mathbb{R}$ , stetig $\Rightarrow W_f$ = abgeschlossenes Intervall 
 			
-			\subsubsection{Absolut Extremalstelle (Randanalyse durchführen)}
+			\textbf{Absolut Extremalstelle (Randanalyse durchführen)}\\
 			\begin{tabular}{ll}
 			Absolutes Maximum: &  $\mathrm{max}(W_f)$\\
 		  	Absolutes Minimum & $\mathrm{min}(W_f)$ \\
 			\end{tabular}
 			
-			\subsubsection{Relative Extremalstelle}
+			\textbf{Relative Extremalstelle}\\
 		
 			\begin{tabular}{ll}
 			Lokales Maximum: & "Berg" (nicht am Rand der Funktion)\\ 
@@ -231,7 +232,7 @@
 			\end{tabular}
 			
 			
-			\subsubsection{Prinzip von Fermat S. 453}	
+			\textbf{Prinzip von Fermat S. 453}	\\
 			Wenn $x_0$ ein relatives Minimum / Maximum ist muss zwingend die Ableitung $f'(x_0) = 0$ sein	 $\rightarrow$ \textbf{Umkehrung gilt nicht!}\\
 			$x_0$ = kritische Stelle $\rightarrow$ zu prüfen auf Berg, Tal oder Terrasse \\
 			
@@ -254,7 +255,7 @@
 			\vspace{0.1cm}
 			y-Koordinate des Punktes: $x_0$ in f(x) einsetzen					
 			
-			\subsection{Monotonie S. 453}
+			\subsubsection{Monotonie S. 453}
 			\begin{tabular}{| c | l |}
 			\hline
 			$f'(x_0)$ &  \\
@@ -270,7 +271,7 @@
 			\end{tabular}
 			
 			
-			\subsection{Wendepunkte (Terrassenpunkte)}
+			\subsubsection{Wendepunkte (Terrassenpunkte)}
 			Wendepunkt = Krümmungswechsel = Vorzeichenwechsel für $f''(x)$ bei $x_0$ \\
 			
 			\begin{tabular}{| c | c | c | l |}
@@ -288,14 +289,12 @@
 			Ausserdem liegt eine WP vor wenn $f''$ beim Durchgang durch $x_0$ das Vorzeichen wechselt, also $f''(x_0) < 0$ für $x < x_0$ und für $f''(x_0) > 0$ für $x > x_0$ bzw. umgekehrt.\\
 			
 			y-Koordinate des Punktes: $x_0$ in f(x) einsetzen		
-			
-			\columnbreak
 
 
-			\subsection{Krümmungsverhalten} 
+			\subsubsection{Krümmungsverhalten} 
 			Das beschriebene Verhalten gilt global für die ganze Funktion f(x) bzw. auf einem ganzen Intervall, nicht nur an einer Stelle $x_0$!
 			
-			\subsubsection{Linkskrümmung (konvex)}
+			\textbf{Linkskrümmung (konvex)}\\
 			\begin{tabular}{ll}
 			$\bullet$ & $f(x) \geq f(x_0) + f'(x_0)(x-x_0)$ \\
 			& f(x) überall grösser als Tangentensteigung an jedem Punkt \\
@@ -306,7 +305,7 @@
 			
 			Strenge Krümmung: Logik verstärkt (ausser bei Berührpunkt $x_0$)
 			
-			\subsubsection{Rechtskrümmung (konkav)}
+			\textbf{Rechtskrümmung (konkav)}\\
 			\begin{tabular}{ll}
 			$\bullet$ & $f(x) \leq f(x_0) + f'(x_0)(x-x_0)$ \\
 			& f(x) überall kleiner als Tangentensteigung an jedem Punkt \\
@@ -318,20 +317,20 @@
 			Strenge Krümmung: Logik verstärkt (ausser bei Berührpunkt $x_0$)				
 			
 			
-		\subsection{Bernoulli-Hôpital S. 57-58}	
-		\subsubsection{B.H. I}
+		\subsubsection{Bernoulli-Hôpital S. 57-58}	
+		\textbf{B.H. I}\\
 		$\frac{f_1(x)}{f_2(x)}$ \quad ($ x\rightarrow x_0$) \quad $\frac{0}{0}$ \\
 		\\
 		Wenn $\frac{f'_1(x)}{f'_2(x)}$ eine bestimmte Form ist, dann ist dies das Resultat von $\lim \limits_{x \to x_0} \frac{f_1(x)}{f_2(x)}$
 		
-		\subsubsection{B.H. II}	
+		\textbf{B.H. II}	\\
 		$\frac{f_1(x)}{f_2(x)}$ \quad ($x\rightarrow x_0$) \quad $\frac{\infty}{\infty}$		\\
 		\\
 		Wenn $\frac{f'_1(x)}{f'_2(x)}$ eine bestimmte Form ist, dann ist dies das Resultat von $\lim \limits_{x \to x_0} \frac{f_1(x)}{f_2(x)}$ \\
 		\\
 		\textbf{Bernoulli-Hôpital darf auch mehrfach nacheinander verwendet werden $\rightarrow$ immer erst algebraisch verienfachen!} 
 		
-		\subsection{Unbestimmte Formen zu Bernoulli-Formen}		
+		\subsubsection{Unbestimmte Formen zu Bernoulli-Formen}		
 		\begin{tabular}{ll}
 		$f \cdot$ g vom Typ $(0^+) \cdot \infty$ & $\frac{f}{1 / g}$ von Typ $\frac{0}{0}$ \\
 		&   $\frac{1 / f}{g}$ von Typ $\frac{\infty}{\infty}$ \\
@@ -346,7 +345,7 @@
 		\end{tabular}
 		
 		
-		\subsection{Optimierungsprobleme}
+		\subsubsection{Optimierungsprobleme}
 		\begin{tabular}{ll}
 		1. & Problem durch eine Funktion f mit ultimativer Varibalen x \\
 		& ausdrücken $\rightarrow f(x)$ \\
@@ -362,7 +361,7 @@
 		\end{tabular}				
 
 
-		\subsection{Asymptote bestimmen}
+		\subsubsection{Asymptote bestimmen}
 		Asymptotengerade: $y = mx + q$		\qquad $m$ und $q$ sind gesucht \\
 		\\
 		\begin{tabular}{ll}
@@ -375,9 +374,9 @@
 		
 		
 		
-		\section{Integralrechnung S.493}
+		\subsection{Integralrechnung S.493}
 		
-		\subsection{Obersumme / Untersumme}
+		\subsubsection{Obersumme / Untersumme}
 		Die Fläche unter einer Funktion f(x) wird in Intervalle zerlegt.\\
 		\textbf{Voraussetzung: $f: [a;b] \rightarrow \mathbb{R}$ und $\mathbb{W}_f$ beschränkt} \\
 		\\
@@ -426,13 +425,13 @@
 		\end{minipage}
 		
 		
-		\subsection{Riemann-Summe S.506-507}
+		\subsubsection{Riemann-Summe S.506-507}
 		RS = $\sum \limits_{i=0}^{n-1} f(\xi) \Delta x_i$  \quad $d(Z) \rightarrow 0 $ \quad $\int \limits_{a}^{b} f(x) \, dx$ \\
 		\\
 		$\xi \in [x_i ; x_{i+1}]$		
 			
 		
-		\subsection{Riemann-Integral S.507}
+		\subsubsection{Riemann-Integral S.507}
 		I = $\underline{I}$ = $\overline{I}$ wenn $\underline{I}$ = $\overline{I}$\\
 		\\		
 		\begin{minipage}{0.45\linewidth}
@@ -448,18 +447,17 @@
 		
 	
 		
-		\subsection{Integrierbare Funktionen}
+		\subsubsection{Integrierbare Funktionen}
 		\textbf{Hinreichendes Kriterium: $f: [a;b] \rightarrow \mathbb{R}$ und $\mathbb{W}_f$ beschränkt}		 \\
 		\\	
 		\includegraphics[width=0.7\linewidth]{Bilder/integrierbare-funktionen}
 		
-		\pagebreak
 		
-		\subsection{Integrationsregeln S. 494-496}
+		\subsubsection{Integrationsregeln S. 494-496}
 		Linearität: $\int \limits_{a}^{b} \alpha \, f(x) \, dx = \alpha \int \limits_{a}^{b} f(x)\, dx$ 
 		
 		
-		\subsubsection{Rechenregeln mit Integralen S. 508-510}
+		\textbf{Rechenregeln mit Integralen S. 508-510}\\
 		\begin{tabular}{ll}
 		Zerlegung: & $\int \limits_{a}^{b} f_1(x) \, dx + f_2(x)\, dx = \int \limits_{a}^{b} f_1(x) \, dx + \int \limits_{a}^{b} f_2(x) \, dx$ \\
 		\\		
@@ -471,7 +469,7 @@
 		\end{tabular}
 		
 		
-		\subsection{Wichtige Integrale S. 495}
+		\subsubsection{Wichtige Integrale S. 495}
 		\begin{tabular}{ll}
 		$\int \limits_{a}^{b} x^2 \, dx = \frac{b^3}{3} - \frac{a^3}{3}$ & $\int \limits_{a}^{b} x \, dx = \frac{b^2}{2} - \frac{a^2}{2}$ \\
 		\\
@@ -479,7 +477,7 @@
 		\end{tabular}
 			
 			
-		\subsection{Flächen unter Integralen}
+		\subsubsection{Flächen unter Integralen}
 		\textbf{Voraussetzung: $f: [a;b] \rightarrow \mathbb{R}$ und $\mathbb{W}_f$ beschränkt}\\
 		\\
 		Fläche $A = \int \limits_{a}^{b} \vert f(x) \vert \, dx $ \\
@@ -489,13 +487,13 @@
 		$\vert x^2 - x \vert = -(x^2 - x)$ falls $x > x^2$ 
 		
 		
-		\subsection{Mittelwert einer Funktion S. 510}		
+		\subsubsection{Mittelwert einer Funktion S. 510}		
 		Funktion aufgeteilt in n äquidistante Intervalle $\rightarrow \Delta x = \frac{b-a}{n}$ \\
 		\\
 		Mittelwert: \quad $\frac{1}{b-a} \int \limits_{a}^{b} f(x) \, dx$
 		
 		
-		\subsection{Mittelwertsatz S. 510}
+		\subsubsection{Mittelwertsatz S. 510}
 			\textbf{Voraussetzung: $f: [a;b] \rightarrow \mathbb{R}$ und $\mathbb{W}_f$ beschränkt und stetig} \\
 		Die Fläche unter der Funktion $f(x)$ kann an mind. einem Punkt $\xi$ als Rechteck dargestellt werden. \\
 		$\xi \in (a;b)$ \\
@@ -514,7 +512,7 @@
 		\end{minipage}
 		
 		
-		\subsection{Integralfunktion I(x)}
+		\subsubsection{Integralfunktion I(x)}
 		\textbf{Voraussetzung: $f: [a;b] \rightarrow \mathbb{R}$ und integrierbar} \\
 		 \\
 		 I(x) besitzt eine feste untere Grenze c = const (Anker) und eine variable obere Grenze x (Hauptvariable) \quad $x \in $[a;b] \qquad  $c \in $[a;b] \\
@@ -522,7 +520,7 @@
 		 Notation: $I(\tilde{x}) = \int \limits_{c}^{x} f(\tilde{x}) d\tilde{x} $  \qquad $\tilde{x}$ ist die Integrationsvariable 
 		 
 		 
-		 \subsubsection{Eigenschaften der Integralfunktion}
+		 \textbf{Eigenschaften der Integralfunktion}\\
 			Die Integralfunktion hat beim Anker c eine Nullstelle: \\
 			\\
 			$I(c) = \int \limits_{c}^{c} f(\tilde{x}) \, d\tilde{x} = 0 $  \\
@@ -546,7 +544,7 @@
 		\end{tabular}
 		
 		
-		\subsubsection{Beispiel Integralfunktion bestimmen}
+		\textbf{Beispiel Integralfunktion bestimmen}\\
 		$f(x)=\left\{\begin{array}{ll} 1, & 0 \leq x < 0.75 \\
          -0.5, & 0.75 \leq x \leq 2 \end{array} \right.$	\\
      \\
@@ -558,9 +556,7 @@
          	\textcolor{red}{Wichtig: Bei Funktionen mit Sprungstellen immer beim Anker \\
          	beginnnen, wenn nichts spezielles verlangt ist} \\
          	
-         	\columnbreak
-         	
-		\subsection{Stammfunktion F}
+		\subsubsection{Stammfunktion F}
 		Eine Funktion $F(x)$ heisst Stammfunktion von $f(x)$ wenn gilt: \\
 		\textbf{F'(x) = f(x)} \\
 		\\
@@ -572,18 +568,18 @@
 		$\Rightarrow$ Ableitungstabelle rückwärts lesen für Stammfunktion!
 		
 		
-		\subsection{Unbestimmtes Integral}
+		\subsubsection{Unbestimmtes Integral}
 			$I(x) + C = \int \limits f(\tilde{x}) \, d\tilde{x} $ \quad  $C \in \mathbb{R}$ \\
 			\\
 			\textbf{Wenn $f(x)$ stetig ist, dann entspricht das unbestimmte Integral der Stammfunktion}
 		
 		
-		\subsection{Hauptsatz der Integration S. 507}
+		\subsubsection{Hauptsatz der Integration S. 507}
 		$\int \limits_a^b f(x) \, dx = F(b) - F(a) = \left[ F(x) \right]_a^b = F(x) \vert_a^b $
 			
 	
 	
-	\subsection{Wachstumsvergleiche}			 
+	\subsubsection{Wachstumsvergleiche}			 
 			\begin{tabular}{llll}
 			(1) & $\frac{n^k}{q^n} (n \rightarrow \infty)= 0$  & (k $\in \mathbb{N}; q > 1)$ & $\frac{\text{Potenz}}{\text{Exponentiell}} \rightarrow 0$\\
 			\\
